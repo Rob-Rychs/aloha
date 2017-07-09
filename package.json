@@ -1,0 +1,19 @@
+{
+  "name": "aloha",
+  "version": "1.0.0",
+  "description": "Aloha Apparel Co. Homepage",
+  "main": "index.html",
+  "author": "Rob-Rychs <Robrychel@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  },
+  "dependencies": {}
+}

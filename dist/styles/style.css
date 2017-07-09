@@ -1,0 +1,407 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* assign project specs in root folder as variables. YAY */
+:root {
+  --mobile-font-size: 14px;
+  --tab-font-size: 16px;
+  --body-font: 'Raleway Light', sans-serif;
+  --headings-font: 'Playfair Display', serif;
+  --body-font-color: #2d2d2d;
+  --light-grey-color: #969696;
+  --orange-brand-color: #e2574c;
+  --link-hover-color: #b64036;
+  --light-grey-border: #d7d7d7;
+  --dark-grey-footer: #242424;
+  --padding: 15px;
+}
+
+body {
+  background-color: white;
+  font-family: var(--body-font);
+  color: var(--body-font-color);
+  font-size: var(--mobile-font-size);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font);
+}
+
+.container {
+  width: 100%;
+  padding: var(--padding);
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+}
+.navbar-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 12%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.logo {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+img.logo {
+  max-width: 120px;
+}
+
+.cart {
+  width: 50px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  text-align: right;
+}
+
+.navmenu {
+  padding-top: .5rem;
+  border-top: 1px solid var(--light-grey-color);
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.navmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: row; 
+  flex-direction: row;
+  text-transform: uppercase;
+  padding-top: 8px;
+ 
+}
+
+.navmenu ul>li>a {
+  text-decoration: none;
+  color: var(--orange-brand-color);
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url('../images/banner-girl.png') no-repeat center 60px, url('../images/flower-bkgd.jpg'), center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner-girl.png') no-repeat center 60px, url('../images/flower-bkgd.jpg'), center;
+  background-size: cover,150px 369px,cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  margin-top: 115px;
+}
+
+.smooth-scroll-about {
+  position: absolute;
+  top: 402px;
+}
+
+.smooth-scroll-shop {
+  position: absolute;
+  top: 620px;
+}
+
+.smooth-scroll-featured {
+  position: absolute;
+  top: 1500px;
+}
+
+.smooth-scroll-updates {
+  position: absolute;
+  top: 2400px;
+}
+
+
+.hero > div {
+  position: absolute;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  z-index: 5;
+  width: 60%;
+}
+
+.hero-text p {
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.banner-girl {
+  height: 70%;
+}
+
+.txtcontent {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: var(--padding);
+  line-height: 2;
+}
+
+.txtcontent > p {
+  font-weight: 300;
+  padding: 1rem;
+}
+
+ h2.italics {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+ span.bold {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.imagegrid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px 10px;
+  grid-template-areas:
+    "mens mens mens mens"
+    "trends trends glasses glasses"
+    "sale sale bags bags"
+    "womens womens womens womens";
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item::before {
+  background-color: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.grid-item > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.item-1 {
+  grid-area: mens;
+}
+
+.item-2 {
+  grid-area: trends;
+}
+
+.item-3 {
+  grid-area: glasses;
+}
+
+.item-4 {
+  grid-area: sale;
+}
+
+.item-5 {
+  grid-area: bags;
+}
+
+.item-6 {
+  grid-area: womens;
+}
+
+div.imagegrid > div > img {
+  width:100%;
+}
+
+
+
+/*div.imagegrid > p {
+  display: ;
+}*/
+
+.featured-products {
+  text-align: center;
+  height: calc(100vh - 115px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;;
+}
+
+.extra-btm-padding {
+  padding-bottom: calc(3 * (var(--padding)));
+}
+
+.padding-top {
+  padding-top: calc(3 * (var(--padding)));
+}
+
+.product-info {
+  line-height: 1.5;
+  padding: var(--padding);
+}
+
+.product-info > p {
+  font-size: .7rem;
+  color: var(--light-grey-color);
+}
+
+.product-info > h3 {
+  font-size: 1.5rem;
+  color: var(--orange-brand-color);
+}
+
+.image-slider {
+
+}
+
+.subscribe {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.15))), url('../images/wave-bkgd.jpg') bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../images/wave-bkgd.jpg') bottom;
+  text-align: center;
+  color: white;
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  background-color: var(--dark-grey-footer);
+  padding: var(--padding);
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.footer-text {
+  text-align: center;
+  
+}
+
+.footer-text > div {
+  margin: var(--padding);
+}
+footer .greyscale {
+  color: var(--light-grey-color);
+}
+
+.social ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social {
+  text-align: center;
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  line-height: 1.5;
+}
+
+.social span {
+  display: none;
+}
+
+.social a:hover {
+  color: var(--link-hover-color);
+}
+
+ .social li {
+  display: inline-block;
+}
+
+.fa {
+  display: inline-block;
+}
+
+@media (min-width:600px) {
+
+}
+
+@media (min-width:1240px) {
+
+}
