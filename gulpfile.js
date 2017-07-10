@@ -16,8 +16,10 @@ gulp.task('autoprefix', () =>
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
-        }))
-        .pipe(gulp.dest('./dist/styles'))
+        })),
+        .pipe(uglify()),
+
+        gulp.dest('./dist/styles')
 );
 
 gulp.task('compress', function (cb) {

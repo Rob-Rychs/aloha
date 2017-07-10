@@ -188,8 +188,14 @@ img.logo {
 }
 
 .grid-item::before {
-  background-color: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3);
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .grid-item > p {
@@ -200,6 +206,7 @@ img.logo {
   text-transform: uppercase;
   color: white;
   font-size: 1.2rem;
+  z-index: 2;
 }
 
 .item-1 {
