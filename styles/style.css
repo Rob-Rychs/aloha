@@ -6,8 +6,8 @@
 :root {
   --mobile-font-size: 14px;
   --tab-font-size: 16px;
-  --body-font: 'Raleway Light', sans-serif;
-  --headings-font: 'Playfair Display', serif;
+  /* --body-font: 'Raleway Light', sans-serif;
+  --headings-font: 'Playfair Display', serif; */
   --body-font-color: #2d2d2d;
   --light-grey-color: #969696;
   --orange-brand-color: #e2574c;
@@ -19,13 +19,15 @@
 
 body {
   background-color: white;
-  font-family: var(--body-font);
+  /* font-family: var(--body-font); */
+  font-family: 'Raleway-Medium', sans-serif;
   color: var(--body-font-color);
   font-size: var(--mobile-font-size);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headings-font);
+  /* font-family: var(--headings-font); */
+  font-family: 'Playfair Display', serif;
 }
 
 .container {
@@ -94,7 +96,7 @@ img.logo {
   flex-direction: row;
   text-transform: uppercase;
   padding-top: 8px;
- 
+  font-weight: 500;
 }
 
 .navmenu ul>li>a {
@@ -103,7 +105,7 @@ img.logo {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner-girl.png') no-repeat center 60px, url('../images/flower-bkgd.jpg'), center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner-girl.png') no-repeat center 60px, url('../images/flower-bkgd.jpg'), repeat-x top;
   background-size: cover,150px 369px,cover;
   display: flex;
   flex-direction: column;
@@ -154,6 +156,7 @@ img.logo {
 .hero-text h1 {
   font-size: 2rem;
   padding: .5rem;
+  font-family: 'PlayfairDisplay-Regular', serif;
 }
 
 .banner-girl {
@@ -180,7 +183,7 @@ img.logo {
  h2.italics {
   font-style: italic;
   font-size: 2rem;
-  font-family: var(--headings-font);
+  font-family: "Playfair Display", serif;
 }
 
  span.bold {
@@ -287,7 +290,7 @@ div.imagegrid > div > img {
 .product-info > h3 {
   font-size: 1.5rem;
   color: var(--orange-brand-color);
-  font-family: var(--headings-font);
+ font-family: "Playfair Display", serif;
 }
 
 .carousel-cell {
@@ -305,6 +308,7 @@ div.imagegrid > div > img {
   border-radius: 15px;
   padding: 5px 8px 5px 8px;
   margin-top: 10px; 
+  outline: none;
 }
 
 .subscribe {
@@ -325,7 +329,12 @@ div.imagegrid > div > img {
     flex-direction: column;
     justify-content: space-between;
     line-height: 2;
- 
+}
+.subscribetxt h2{
+  margin-bottom: 1rem;
+}
+.subscribetxt p{
+  margin-bottom: 1rem;
 }
 .formcontainer {
   display: flex;
@@ -487,5 +496,9 @@ footer .greyscale {
   }
   input[type=submit] {
     right: 2.4rem;
+  }
+  .hero {
+    background-size: cover, 245px 620px, contain;
+    height: 560px;
   }
 }

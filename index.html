@@ -10,17 +10,21 @@
 
       <link rel="stylesheet" href="./styles/reset.css">
       <link rel="stylesheet" href="./fonts/fonts.css">
+      <link rel="stylesheet" href="./styles/loader.css">
       <link rel="stylesheet" href="./styles/style.css">
       <link rel="stylesheet" href="./styles/flickity.min.css">
       <link rel="icon" sizes="192x192" href="./images/aloha-logo.ico">
        
       <script src="https://use.fontawesome.com/4fbf87bab3.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="loader.js"></script> 
      
       
       
     </head>
-    <body>
+    <body onload="loaderFunction()" style="margin:0;">
+      <div class="loader" id="loader"></div>
+      <div id="myDiv">
     <header class="navbar">
         <div class="container navbar-contents">
           <div class="logo">
@@ -118,7 +122,7 @@
           <img src="./images/pink-dotted-dress.jpg">
           <div class="product-info">
           <p>Dresses</p>
-          <h3>Pink dotted Dress</h3>
+          <h3>Pink Dotted Dress</h3>
           <p>$99.00</p>
           <button type="button" class="add-to-cart">Add to Cart</button>
           </div>
@@ -164,7 +168,7 @@
               <p>© 2017 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
             </div>
             <div>
-              <p>(604) 604-6040 info@alohaapparel.com</p>
+              <p>(604)-604-6040 info@alohaapparel.com</p>
             </div>
             <div>
               <p class="greyscale">1490 West Broadway<br>Vancouver, BC, Canada</p>
@@ -182,6 +186,7 @@
         </div>
       </div>
     </footer>
+    </div>
     <script src="./js/smooth-scroll.js"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
     <script src="./js/flickity-init.js"></script>
