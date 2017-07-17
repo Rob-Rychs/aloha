@@ -25,12 +25,16 @@ $(function(){
   var $carousel = $('[data-flickity-for-school]');
   if ($carousel.length) {
     var options = !$carousel.data('flickityForSchool') ? $carousel.data('flickityForSchool') : {
-      "cellAlign": "left", 
+      "cellAlign": "center", 
       "contain": true,
       "initialIndex": "0", 
       "freeScroll": false, 
-      "wrapAround": true,
-      "autoplay": true
+      "wrapAround": false,
+      "groupCells": true,
+      "prevNextButtons": false,
+      "draggable": false,
+      "imagesLoaded": true,
+      "autoPlay": true,
     }
     carousel = new Flickity($carousel[0], options);
     console.log(carousel, options);

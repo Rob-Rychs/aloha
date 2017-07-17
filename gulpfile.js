@@ -17,10 +17,9 @@ gulp.task('autoprefix', () =>
             browsers: ['last 2 versions'],
             cascade: false
         })),
-        .pipe(uglify()),
-
         gulp.dest('./dist/styles')
 );
+
 
 gulp.task('compress', function (cb) {
   pump([

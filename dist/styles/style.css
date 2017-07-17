@@ -315,10 +315,6 @@ div.imagegrid > div > img {
   color: var(--orange-brand-color);
 }
 
-.image-slider {
-
-}
-
 .subscribe {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.15))), url('../images/wave-bkgd.jpg') bottom;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../images/wave-bkgd.jpg') bottom;
