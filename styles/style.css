@@ -200,6 +200,7 @@ img.logo {
     "trends trends glasses glasses"
     "sale sale bags bags"
     "womens womens womens womens";
+  margin-bottom: var(--padding);
 }
 
 .grid-item {
@@ -259,7 +260,7 @@ div.imagegrid > div > img {
 
 .featured-products {
   text-align: center;
-  height: calc(100vh - 115px);
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;;
@@ -315,7 +316,7 @@ div.imagegrid > div > img {
   flex-direction: column;
   justify-content: center;
   margin-bottom: .5rem;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .subscribetxt {
@@ -326,10 +327,14 @@ div.imagegrid > div > img {
     line-height: 2;
  
 }
- 
+.formcontainer {
+  display: flex;
+  justify-content: center;
+}
 
 form {
   position: relative;
+  width: 100%;
 }
 
 input[type=email] {
@@ -363,7 +368,6 @@ footer {
 
 .footer-text {
   text-align: center;
-  
 }
 
 .footer-text > div {
@@ -443,8 +447,30 @@ footer .greyscale {
     width: 50%;
   }
   form {
-    width: 67%;
+    max-width: 55%;
   }
+  input[type=submit] {
+    right: 2rem;
+  }
+  .footer-text {
+    text-align: left;
+  }
+  .footcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social li {
+    display: block;
+  }
+  .social span{
+    display: inline-block;
+  }   
 }
 
 @media (min-width:1240px) {
@@ -456,5 +482,8 @@ footer .greyscale {
   }
   .carousel-cell{
     width: 25%;
+  }
+  input[type=submit] {
+    right: 2.4rem;
   }
 }
