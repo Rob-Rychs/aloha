@@ -63,6 +63,20 @@ img.logo {
   flex: 0 1 50%;
   text-align: right;
   margin-bottom: 3px;
+  position: relative;
+}
+
+.item-count {
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: var(--orange-brand-color);
+  right: -10px;
+  text-align: center;
+  color: white;
+  line-height: 1.6;
 }
 
 .navmenu {
@@ -166,6 +180,7 @@ img.logo {
  h2.italics {
   font-style: italic;
   font-size: 2rem;
+  font-family: var(--headings-font);
 }
 
  span.bold {
@@ -271,6 +286,7 @@ div.imagegrid > div > img {
 .product-info > h3 {
   font-size: 1.5rem;
   color: var(--orange-brand-color);
+  font-family: var(--headings-font);
 }
 
 .carousel-cell {
@@ -421,7 +437,7 @@ footer .greyscale {
   }
   .featured-products {
     margin: 83px;
-    height: calc(90%-115px);
+    height: auto;
   }
   .carousel-cell{
     width: 50%;
