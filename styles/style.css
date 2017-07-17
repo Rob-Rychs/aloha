@@ -269,10 +269,6 @@ div.imagegrid > div > img {
   justify-content: center;;
 }
 
-.extra-btm-padding {
-  padding-bottom: calc(3 * (var(--padding)));
-}
-
 .padding-top {
   padding-top: calc(3 * (var(--padding)));
 }
@@ -298,7 +294,8 @@ div.imagegrid > div > img {
 }
 
 .carousel-cell img {
-  width: 100%;
+  padding: 2rem 2rem;
+  width: 70%;
 }
 
 .add-to-cart {
@@ -456,6 +453,10 @@ footer .greyscale {
   }
   .carousel-cell{
     width: 50%;
+  }
+  .carousel-cell img{
+    width: 100%;
+    padding: 0px;
   }
   form {
     max-width: 55%;
