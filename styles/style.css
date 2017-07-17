@@ -342,6 +342,7 @@ input[type=email] {
   padding: 15px;
   width: 90%;
   border: none;
+  outline: none;
 }
 
 input[type=submit] {
@@ -353,6 +354,7 @@ input[type=submit] {
   border: none;
   right: 1.7rem;
   top: .2rem;
+  outline: none;
 }
 
 footer {
