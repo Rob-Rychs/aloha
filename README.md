@@ -2,7 +2,7 @@
 
 This is a demo homepage for the aloha apparel company.
 
-![homepage](https://pasteboard.co/GBvCrFQ.png)
+![homepage](https://cdn.pbrd.co/images/GBvCrFQ.png)
 
 Technology summary:
 
