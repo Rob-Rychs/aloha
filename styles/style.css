@@ -324,16 +324,16 @@ div.imagegrid > div > img {
 }
 
 .subscribetxt {
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     line-height: 2;
     text-shadow: 2px 2px 4px var(--light-grey-border);
 }
-.subscribetxt h2{
-  margin-bottom: 1rem;
-}
+.subscribetxt h2.italics {
+  font-size: 2rem;
+}  
 .subscribetxt p{
   margin-bottom: 1rem;
 }
