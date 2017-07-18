@@ -2,7 +2,7 @@ $(function(){
   $("input[type='submit']").click(function() {
     let checkedemail = document.querySelector("input[type='email']");
     if (checkedemail.checkValidity() == true) {
-    $('.notice-warning').css('display', 'block');
+    $('.notice-warning').css('display', 'inline-block');
     // alert('Thank you for subscribing');
     return false;
   };

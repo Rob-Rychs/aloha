@@ -425,6 +425,7 @@ footer .greyscale {
   font: 24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
   text-align: center;
   display: none;
+  position: float;
   z-index: 5;
 }
 strong {
