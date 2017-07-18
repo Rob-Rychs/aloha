@@ -527,4 +527,13 @@ footer .greyscale {
   .smooth-scroll-featured{
     top: 1530px;
   }
+   .hero-text h1 {
+     font-size: 4rem;
+   }
+  .grid-item > p {
+    font-size: 2.2rem;
+  }  
+  form {
+    max-width: 35%;
+  }
 }
