@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo {
   align-self: flex-start;
-  flex: 0 1 50%;
   margin-bottom: 3px;
 }
 
@@ -123,12 +122,12 @@ img.logo {
 
 .smooth-scroll-shop {
   position: absolute;
-  top: 620px;
+  top: 670px;
 }
 
 .smooth-scroll-featured {
   position: absolute;
-  top: 1500px;
+  top: 1530px;
 }
 
 .smooth-scroll-updates {
@@ -146,16 +145,18 @@ img.logo {
   color: white;
   z-index: 1;
   width: 60%;
+  text-shadow: 2px 2px 4px var(--light-grey-border);
 }
 
 .hero-text p {
   text-transform: uppercase;
   padding: .5rem;
+  font-size: 1.25rem;
 }
 
 .hero-text h1 {
-  font-size: 2rem;
-  padding: .5rem;
+  font-size: 2.12rem;
+  padding: .25rem;
   font-family: 'PlayfairDisplay-Regular', serif;
 }
 
@@ -182,13 +183,14 @@ img.logo {
 
  h2.italics {
   font-style: italic;
-  font-size: 2rem;
-  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-family: 'PlayfairDisplay-Regular', serif;
 }
 
  span.bold {
   font-style: normal;
   font-weight: 900;
+  font-family: 'PlayfairDisplay-Regular', serif;
 }
 
 .imagegrid {
@@ -229,8 +231,9 @@ img.logo {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   z-index: 2;
+  text-shadow: 2px 2px 4px var(--light-grey-border);
 }
 
 .item-1 {
@@ -326,6 +329,7 @@ div.imagegrid > div > img {
     flex-direction: column;
     justify-content: space-between;
     line-height: 2;
+    text-shadow: 2px 2px 4px var(--light-grey-border);
 }
 .subscribetxt h2{
   margin-bottom: 1rem;
@@ -482,7 +486,19 @@ footer .greyscale {
   }
   .social span{
     display: inline-block;
-  }   
+  }  
+  .hero-text h1 {
+    font-size: 3rem;
+  } 
+  .grid-item > p {
+    font-size: 1.8rem;
+  }
+  .smooth-scroll-about {
+    top: 420px;
+  }
+  .smooth-scroll-featured {
+    top: 1110px;
+  }
 }
 
 @media (min-width:1240px) {
@@ -501,5 +517,14 @@ footer .greyscale {
   .hero {
     background-size: cover, 245px 620px, contain;
     height: 560px;
+  }
+  .smooth-scroll-about{
+  top: 590px;
+  }
+  .smooth-scroll-shop{
+    top: 730px;
+  }
+  .smooth-scroll-featured{
+    top: 1530px;
   }
 }
